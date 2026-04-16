@@ -8,6 +8,9 @@ public class ExemplosCaixasDeDialogos {
         //showMessageDialog saída de dados
         JOptionPane.showMessageDialog(null, "Bem-vindo ao sistema!");
         
-
+        //showComfirmDialog
+        JOptionPane.showConfirmDialog(null, "Deseja sair?");
+        
+        
     }
 }
