@@ -4,12 +4,18 @@ import javax.swing.JOptionPane;
 
 public class ExemplosCaixasDeDialogos {
     public static void main(String[] args) {
-       
+        System.out.println("");
         //showMessageDialog saída de dados
         JOptionPane.showMessageDialog(null, "Bem-vindo ao sistema!");
         
         //showComfirmDialog
-        JOptionPane.showConfirmDialog(null, "Deseja sair?");
+        int resposta = JOptionPane.showConfirmDialog(null, "Deseja sair?");
+        
+        if(resposta == JOptionPane.YES_NO_OPTION){
+            JOptionPane.showMessageDialog(null, "Saindo do sistema.");
+        }else{
+            JOptionPane.showMessageDialog(null, "Continuando no sistema.");
+        }
         
         
     }
