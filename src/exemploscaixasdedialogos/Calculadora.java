@@ -15,19 +15,24 @@ public class Calculadora {
                 "Digite o segundo valor:"
         );
         
+        //Conversor Int
         int vInt        = Integer.parseInt(valor1);
+        
+        //Conversor Double
         double vDouble1 = Double.parseDouble(valor1);
         double vDouble2 = Double.parseDouble(valor2);
+        
+        //Conversor Float
         float vFloat    = Float.parseFloat(valor1);
         
         double resultado = vDouble1 + vDouble2;
+        
+        //Conversor String
+        String texto = String.valueOf(resultado);
         
         JOptionPane.showMessageDialog(
                 null, 
                 "Total: "+resultado
         );
-        
-        
     }
-    
 }
