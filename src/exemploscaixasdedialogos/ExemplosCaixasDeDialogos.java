@@ -5,7 +5,6 @@ import javax.swing.JOptionPane;
 public class ExemplosCaixasDeDialogos {
 
     public static void main(String[] args) {
-        System.out.println("");
         //showMessageDialog saída de dados
         JOptionPane.showMessageDialog(null, "Bem-vindo ao sistema!");
 
@@ -35,6 +34,19 @@ public class ExemplosCaixasDeDialogos {
                 null,                               //Sempre null
                 opcoes,                             //Vetor 
                 opcoes[0]);                         //Inicio do vetor
+
+        
+        //showInputDialog List-Object
+        Object[] itens = {"Teclado", "Mouse", "Monitor"};
+
+        Object opcaoEscolhida = JOptionPane.showInputDialog(
+                null,
+                "Escolha um item: ",
+                "Lista de opções",
+                JOptionPane.INFORMATION_MESSAGE,
+                null,
+                itens,
+                itens[0]);
 
     }
 
